@@ -51,8 +51,9 @@ const slashCommandFactory = (urbanDictLookup, slackToken) => body =>
 
     urbanDictLookup(term).then(result => {
       return resolve({
-        text: `*[${result.word}](${result.permalink})*: ${result.definition} (${result.thumbs_up}👍)
-> ${result.example}`,
+        text: `*${result.word}*: ${result.definition} (${result.thumbs_up}👍)
+> ${result.example}
+${result.permalink}`,
         attachments: null
       });
     });
