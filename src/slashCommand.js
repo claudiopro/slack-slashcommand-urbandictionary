@@ -22,9 +22,6 @@ const createAttachment = result => {
   return createSuccessAttachment(result);
 };
 
-const quoteLines = text =>
-  text.split("\r\n").filter(line => !!line).map(line => `>${line}`).join("\n");
-
 const slashCommandFactory = (urbanDictLookup, slackToken) => body =>
   new Promise((resolve, reject) => {
     if (!body) {
@@ -55,9 +52,8 @@ const slashCommandFactory = (urbanDictLookup, slackToken) => body =>
     urbanDictLookup(term).then(result => {
       return resolve({
         text: `*${result.word}* (${result.thumbs_up}👍): ${result.definition}
-${quoteLines(result.example)}
-${result.permalink}`,
-        attachments: null
+>>>${quoteLines(result.example)}`,
+        attachments: result.permalink
       });
     });
   });
