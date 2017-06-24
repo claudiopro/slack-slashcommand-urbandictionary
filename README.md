@@ -1,3 +1,5 @@
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 # slack-slashcommand-urban
 
 A simple [Slack Slash Command](https://api.slack.com/slash-commands) handler written following @lmammino's [excellent tutorial on Scotch.io](https://scotch.io/tutorials/create-a-custom-slack-slash-command-with-nodejs-and-express).
