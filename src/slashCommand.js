@@ -22,7 +22,8 @@ const createAttachment = result => {
   return createSuccessAttachment(result);
 };
 
-const quoteLines = text => text.split('\n').map(line => `>${line}`).join('\n');
+const quoteLines = text =>
+  text.split("\n").filter(line => line).map(line => `>${line}`).join("\n");
 
 const slashCommandFactory = (urbanDictLookup, slackToken) => body =>
   new Promise((resolve, reject) => {
