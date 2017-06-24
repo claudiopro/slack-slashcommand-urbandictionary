@@ -26,10 +26,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claudiopro/slack-slashcommand-urban.git"
+    "url": "git+https://github.com/claudiopro/slack-slashcommand-urbandictionary.git"
   },
   "bugs": {
-    "url": "https://github.com/claudiopro/slack-slashcommand-urban/issues"
+    "url": "https://github.com/claudiopro/slack-slashcommand-urbandictionary/issues"
   },
-  "homepage": "https://github.com/claudiopro/slack-slashcommand-urban#readme"
+  "homepage": "https://github.com/claudiopro/slack-slashcommand-urbandictionary#readme"
 }
