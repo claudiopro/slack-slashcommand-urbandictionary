@@ -11,7 +11,7 @@
   "env": {
     "SLACK_TOKEN": {
       "description": "A security token to verify that requests are actually coming from Slack.",
-      "generator": "secret"
+      "value": "<Enter the Verification Token from the App Credentials>"
     }
   }
 }
