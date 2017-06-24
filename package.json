@@ -21,8 +21,15 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "request": "^2.81.0",
-    "request-promise-native": "^1.0.4",
     "urban": "^0.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiopro/slack-slashcommand-urban.git"
+  },
+  "bugs": {
+    "url": "https://github.com/claudiopro/slack-slashcommand-urban/issues"
+  },
+  "homepage": "https://github.com/claudiopro/slack-slashcommand-urban#readme"
 }
