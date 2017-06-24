@@ -1,4 +1,3 @@
-// src/createShortUrls.js
 const urban = require("urban");
 
 const createErrorDescription = (code, err) => {
@@ -30,7 +29,7 @@ const createError = (term, error) => {
 const createUrbanFactory = () => term =>
 	new Promise((resolve, reject) => {
 		urban(term).first(response => {
-			if (response.result_type === 'no_results') {
+			if (response.result_type === "no_results") {
 				resolve(createError(term, response));
 				return;
 			}

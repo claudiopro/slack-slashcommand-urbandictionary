@@ -1,5 +1,3 @@
-// src/slashCommand.js
-// const commandParser = require("./commandParser");
 const validateCommandInput = require("./validateCommandInput");
 
 const createErrorAttachment = error => ({
@@ -38,7 +36,6 @@ const slashCommandFactory = (urbanDictLookup, slackToken) => body =>
       });
     }
 
-    // const { text } = commandParser(body.text);
     const term = body.text;
 
     let error;
