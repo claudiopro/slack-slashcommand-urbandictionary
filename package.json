@@ -1,0 +1,28 @@
+{
+  "name": "slack-slashcommand-urbandictionary",
+  "version": "1.0.0",
+  "description": "Slack slash command handler for Urban Dictionary lookup",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slack",
+    "slash",
+    "command",
+    "urban",
+    "dictionary",
+    "slang",
+    "nsfw"
+  ],
+  "author": "Claudio Procida <claudio.procida@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4",
+    "urban": "^0.3.1"
+  }
+}
